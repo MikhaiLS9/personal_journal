@@ -1,0 +1,53 @@
+.button {
+  max-width: 362px;
+  height: 40px;
+  border-radius: 3px;
+  margin: 8px 0px;
+
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  font-family: "Source Sans 3", sans-serif;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.toggleBtn {
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+  transition: background 0.25s;
+  border: none;
+  font-family: "Source Sans 3", sans-serif;
+  margin: 5px;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.formStyle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 360px;
+  margin: 10px;
+}
+
+.toggleBtnStyled {
+  display: flex;
+  justify-content: space-around;
+}
+
+.input {
+  border: none;
+  background: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-family: "Source Sans 3", sans-serif;
+  border-bottom: 1px solid #323232;
+  max-width: 360px;
+  height: 40px;
+  text-align: center;
+}

@@ -1,0 +1,15 @@
+.button {
+  border-radius: 6px;
+  padding: 8px 30px;
+  width: 135px;
+  height: 42px;
+  cursor: pointer;
+  transition: background 0.25s;
+  border: none;
+}
+.accent:hover {
+  background: #131a97;
+}
+.accent {
+  background: #312eb5;
+}

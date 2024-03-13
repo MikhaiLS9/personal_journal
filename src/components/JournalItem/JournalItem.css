@@ -1,0 +1,44 @@
+.journal-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 402px;
+  height: 334px;
+}
+
+.journal-item__header {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 156%;
+  margin: 10px 0px;
+
+  color: #fff;
+}
+.journal-item__body {
+  display: flex;
+  gap: 10px;
+
+  width: 322px;
+  height: 20px;
+}
+.journal-item__date {
+  width: 77px;
+  height: 19px;
+  font-weight: 400;
+  font-size: 16px;
+  white-space: nowrap;
+
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.journal-item__text {
+  width: 235px;
+  height: 38px;
+  font-weight: 400;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  color: rgba(255, 255, 255, 0.6);
+}
