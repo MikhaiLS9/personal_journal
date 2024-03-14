@@ -5,6 +5,10 @@ import { UserContext } from "../context/user.context";
 import styles from "./JournalBodyForm.module.css";
 import { INITIAL_STATE, formReducer } from "./JournalForm.state";
 
+import calendar from "../../assets/calendar.svg";
+import folder from "../../assets/folder.svg";
+import cart from "../../assets/cart.svg";
+
 // eslint-disable-next-line react/prop-types
 function JournalBodyForm({ onSubmit, data, deleteSub }) {
   const [formState, dispatchForm] = useReducer(formReducer, INITIAL_STATE);
@@ -143,11 +147,7 @@ function JournalBodyForm({ onSubmit, data, deleteSub }) {
               className={styles.delete}
               type="button"
             >
-              <img
-                className={styles.img}
-                src="src\assets\cart.svg"
-                alt="sdas"
-              />
+              <img className={styles.img} src={cart} alt="корзина" />
             </button>
           )}
         </div>
@@ -158,11 +158,7 @@ function JournalBodyForm({ onSubmit, data, deleteSub }) {
             htmlFor="date"
             className={styles["form-label"]}
           >
-            <img
-              src="src\assets\calendar.svg"
-              alt="Иконка календаря"
-              className={styles.img}
-            />
+            <img src={calendar} alt="Иконка календаря" className={styles.img} />
           </label>
           <input
             ref={dateRef}
@@ -181,11 +177,7 @@ function JournalBodyForm({ onSubmit, data, deleteSub }) {
             htmlFor="text"
             className={styles["form-label"]}
           >
-            <img
-              src="src\assets\folder.svg"
-              alt="Иконка папки"
-              className={styles.img}
-            />
+            <img src={folder} alt="Иконка папки" className={styles.img} />
           </label>
           <input
             ref={textRef}

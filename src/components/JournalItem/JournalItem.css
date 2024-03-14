@@ -1,9 +1,21 @@
 .journal-item {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
-  width: 402px;
-  height: 334px;
+
+  max-width: 360px;
+  margin: 0 10px;
+}
+
+@media (max-width: 400px) {
+  .journal-item {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    max-width: 100%; 
+    overflow-x: auto;
+  }
 }
 
 .journal-item__header {
@@ -11,23 +23,20 @@
   font-size: 18px;
   line-height: 156%;
   margin: 10px 0px;
-
   color: #fff;
 }
+
 .journal-item__body {
   display: flex;
   gap: 10px;
-
-  width: 322px;
-  height: 20px;
 }
+
 .journal-item__date {
   width: 77px;
   height: 19px;
   font-weight: 400;
   font-size: 16px;
   white-space: nowrap;
-
   color: rgba(255, 255, 255, 0.4);
 }
 
@@ -39,6 +48,18 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 400px) {
+  .journal-item__text {
+    flex: 1; /* Растягиваем текстовый блок на всю доступную ширину */
+    height: 38px;
+    font-weight: 400;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }

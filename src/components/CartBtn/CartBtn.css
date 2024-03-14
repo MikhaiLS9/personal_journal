@@ -1,7 +1,6 @@
 .cart-btn {
   border-radius: 3px;
-  /* padding: 20px; */
-  width: 362px;
+
   height: 98px;
   border: none;
 
@@ -10,6 +9,8 @@
   align-items: flex-start;
 
   background: rgba(255, 255, 255, 0.03);
+
+ 
 }
 
 .cart-btn:hover {
